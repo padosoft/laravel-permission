@@ -17,7 +17,7 @@ use Spatie\Permission\Events\PermissionAssigned;
 
 class EventTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         Permission::create(['name' => 'other-permission']);
